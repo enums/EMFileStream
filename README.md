@@ -4,7 +4,7 @@ A file operation tool developed by Swift 3 working on iOS, macOS and Linux.
 
 #  中文介绍
 
-你可以在[「这里」](http://enumsblog.com/post?pid=16011)找到中文介绍。
+你可以在[「这里」](http://enumsblog.com/post?pid=16011)找到中文介绍。
 
 # Integration
 
