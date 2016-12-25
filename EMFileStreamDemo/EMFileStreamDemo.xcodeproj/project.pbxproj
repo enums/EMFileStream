@@ -1,0 +1,342 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		566E5CDF1E0EB6D400DC179D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566E5CDE1E0EB6D400DC179D /* AppDelegate.swift */; };
+		566E5CE11E0EB6D400DC179D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566E5CE01E0EB6D400DC179D /* ViewController.swift */; };
+		566E5CE41E0EB6D400DC179D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 566E5CE21E0EB6D400DC179D /* Main.storyboard */; };
+		566E5CE61E0EB6D400DC179D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 566E5CE51E0EB6D400DC179D /* Assets.xcassets */; };
+		566E5CE91E0EB6D400DC179D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 566E5CE71E0EB6D400DC179D /* LaunchScreen.storyboard */; };
+		566E5D001E0EC05C00DC179D /* EMFileStream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 566E5CFF1E0EC05C00DC179D /* EMFileStream.framework */; };
+		566E5D011E0EC06000DC179D /* EMFileStream.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 566E5CFF1E0EC05C00DC179D /* EMFileStream.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		566E5D071E0F8EBC00DC179D /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566E5D061E0F8EBC00DC179D /* Student.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		566E5CFD1E0EC03400DC179D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				566E5D011E0EC06000DC179D /* EMFileStream.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		566E5CDB1E0EB6D400DC179D /* EMFileStreamDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EMFileStreamDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		566E5CDE1E0EB6D400DC179D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		566E5CE01E0EB6D400DC179D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = EMFileStreamDemo/ViewController.swift; sourceTree = "<group>"; };
+		566E5CE31E0EB6D400DC179D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		566E5CE51E0EB6D400DC179D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		566E5CE81E0EB6D400DC179D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		566E5CEA1E0EB6D400DC179D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		566E5CFF1E0EC05C00DC179D /* EMFileStream.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EMFileStream.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/EMFileStreamDemo-dmeaigzncifkhafaiezxwxdygenc/Build/Products/Debug-iphonesimulator/EMFileStream.framework"; sourceTree = "<group>"; };
+		566E5D061E0F8EBC00DC179D /* Student.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Student.swift; path = EMFileStreamDemo/Student.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		566E5CD81E0EB6D400DC179D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				566E5D001E0EC05C00DC179D /* EMFileStream.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		566E5CD21E0EB6D400DC179D = {
+			isa = PBXGroup;
+			children = (
+				566E5D061E0F8EBC00DC179D /* Student.swift */,
+				566E5CE01E0EB6D400DC179D /* ViewController.swift */,
+				566E5CE21E0EB6D400DC179D /* Main.storyboard */,
+				566E5CDD1E0EB6D400DC179D /* EMFileStreamDemo */,
+				566E5CDC1E0EB6D400DC179D /* Products */,
+				566E5CFA1E0EC02C00DC179D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		566E5CDC1E0EB6D400DC179D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				566E5CDB1E0EB6D400DC179D /* EMFileStreamDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		566E5CDD1E0EB6D400DC179D /* EMFileStreamDemo */ = {
+			isa = PBXGroup;
+			children = (
+				566E5CDE1E0EB6D400DC179D /* AppDelegate.swift */,
+				566E5CE51E0EB6D400DC179D /* Assets.xcassets */,
+				566E5CE71E0EB6D400DC179D /* LaunchScreen.storyboard */,
+				566E5CEA1E0EB6D400DC179D /* Info.plist */,
+			);
+			path = EMFileStreamDemo;
+			sourceTree = "<group>";
+		};
+		566E5CFA1E0EC02C00DC179D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				566E5CFF1E0EC05C00DC179D /* EMFileStream.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		566E5CDA1E0EB6D400DC179D /* EMFileStreamDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 566E5CED1E0EB6D400DC179D /* Build configuration list for PBXNativeTarget "EMFileStreamDemo" */;
+			buildPhases = (
+				566E5CD71E0EB6D400DC179D /* Sources */,
+				566E5CD81E0EB6D400DC179D /* Frameworks */,
+				566E5CD91E0EB6D400DC179D /* Resources */,
+				566E5CFD1E0EC03400DC179D /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EMFileStreamDemo;
+			productName = EMFileStreamDemo;
+			productReference = 566E5CDB1E0EB6D400DC179D /* EMFileStreamDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		566E5CD31E0EB6D400DC179D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = Enum;
+				TargetAttributes = {
+					566E5CDA1E0EB6D400DC179D = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = JG6P34L9X8;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 566E5CD61E0EB6D400DC179D /* Build configuration list for PBXProject "EMFileStreamDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 566E5CD21E0EB6D400DC179D;
+			productRefGroup = 566E5CDC1E0EB6D400DC179D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				566E5CDA1E0EB6D400DC179D /* EMFileStreamDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		566E5CD91E0EB6D400DC179D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				566E5CE91E0EB6D400DC179D /* LaunchScreen.storyboard in Resources */,
+				566E5CE61E0EB6D400DC179D /* Assets.xcassets in Resources */,
+				566E5CE41E0EB6D400DC179D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		566E5CD71E0EB6D400DC179D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				566E5CE11E0EB6D400DC179D /* ViewController.swift in Sources */,
+				566E5D071E0F8EBC00DC179D /* Student.swift in Sources */,
+				566E5CDF1E0EB6D400DC179D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		566E5CE21E0EB6D400DC179D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				566E5CE31E0EB6D400DC179D /* Base */,
+			);
+			name = Main.storyboard;
+			path = EMFileStreamDemo;
+			sourceTree = "<group>";
+		};
+		566E5CE71E0EB6D400DC179D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				566E5CE81E0EB6D400DC179D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		566E5CEB1E0EB6D400DC179D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		566E5CEC1E0EB6D400DC179D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		566E5CEE1E0EB6D400DC179D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = JG6P34L9X8;
+				INFOPLIST_FILE = EMFileStreamDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Enum.EMFileStreamDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		566E5CEF1E0EB6D400DC179D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = JG6P34L9X8;
+				INFOPLIST_FILE = EMFileStreamDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Enum.EMFileStreamDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		566E5CD61E0EB6D400DC179D /* Build configuration list for PBXProject "EMFileStreamDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				566E5CEB1E0EB6D400DC179D /* Debug */,
+				566E5CEC1E0EB6D400DC179D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		566E5CED1E0EB6D400DC179D /* Build configuration list for PBXNativeTarget "EMFileStreamDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				566E5CEE1E0EB6D400DC179D /* Debug */,
+				566E5CEF1E0EB6D400DC179D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 566E5CD31E0EB6D400DC179D /* Project object */;
+}
