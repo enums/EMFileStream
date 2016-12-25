@@ -10,15 +10,15 @@ import Foundation
 
 
 public enum EMErrorType: String {
-    case none = "无错误"
+    case none = "No Error"
     
-    case fileOpened = "文件已被打开"
-    case fileClosed = "文件已被关闭"
-    case fileOpenFailed = "文件打开失败"
-    case fileSeekFailed = "文件移动失败"
-    case fileReadFailed = "文件读取失败"
-    case fileWriteFailed = "文件写入失败"
-    case fileCloseFailed = "文件关闭失败"
+    case fileOpened = "File already opened"
+    case fileClosed = "File already closed"
+    case fileOpenFailed = "File open failed"
+    case fileSeekFailed = "File seek failed"
+    case fileReadFailed = "File read failed"
+    case fileWriteFailed = "File write failed"
+    case fileCloseFailed = "File close failed"
 }
 
 
