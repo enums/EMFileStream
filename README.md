@@ -18,7 +18,7 @@ Import the framework
 import EMFileStream
 ```
 
-## Read:
+## Read file:
 
 Open a file like this:
 
@@ -73,7 +73,7 @@ Reopen file:
 try file.open()
 ```
 
-## Save:
+## Write file:
 
 Open or create a file like this:
 
