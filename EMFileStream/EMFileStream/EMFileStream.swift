@@ -185,11 +185,11 @@ open class EMFileStream {
             throw EMError.init(type: .fileWriteFailed, detail: "String encoding failed!")
         }
         if let size = writeSize {
-            if size > cStr.count {
+            if size > cStr.count - 1 {
                 for _ in cStr.count..<size {
                     cStr.append(0)
                 }
-            } else if size < cStr.count {
+            } else if size < cStr.count - 1 {
                 throw EMError.init(type: .fileWriteFailed, detail: "Length of string is more than writeSize!")
             }
         }
