@@ -10,5 +10,5 @@ import Foundation
 
 
 public protocol EMFileStreamReadable {
-    static func emObjectRead(withStream stream: EMFileStream) throws -> EMFileStreamReadable
+    init(stream: EMFileStream) throws
 }

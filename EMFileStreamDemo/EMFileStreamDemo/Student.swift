@@ -14,35 +14,31 @@ class Student: CustomStringConvertible, EMFileStreamReadable, EMFileStreamWritea
     var name: String
     var age: Int
     var source: Float
-    var doubleSource: Double
     var memo: String
     
     var description: String {
-        return "name: \(name), age: \(age), source: \(source), doubleSource: \(doubleSource), memo: \(memo)"
+        return "name: \(name), age: \(age), source: \(source) memo: \(memo)"
     }
     
-    init(name: String, age: Int, source: Float, doubleSource: Double, memo: String) {
+    init(name: String, age: Int, source: Float, memo: String) {
         self.name = name
         self.age = age
         self.source = source
-        self.doubleSource = doubleSource
         self.memo = memo
+    }
+    
+    required init(stream: EMFileStream) throws {
+        self.name = try stream.readString(withSize: 20)
+        self.age = try stream.readInt()
+        self.source = try stream.readFloat()
+        self.memo = try stream.readString(withSize: 100)
     }
     
     func emObjectWrite(withStream stream: EMFileStream) throws {
         try stream.write(string: name, writeSize: 20)
         try stream.write(int: age)
         try stream.write(float: source)
-        try stream.write(double: doubleSource)
         try stream.write(string: memo, writeSize: 100)
     }
     
-    static func emObjectRead(withStream stream: EMFileStream) throws -> EMFileStreamReadable {
-        let name = try stream.readString(withSize: 20)
-        let age = try stream.readInt()
-        let source = try stream.readFloat()
-        let doubleSource = try stream.readDouble()
-        let memo = try stream.readString(withSize: 100)
-        return Student.init(name: name, age: age, source: source, doubleSource: doubleSource, memo: memo)
-    }
 }

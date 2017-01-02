@@ -145,7 +145,7 @@ open class EMFileStream {
     
     open func readObject(cls: EMFileStreamReadable.Type) throws -> EMFileStreamReadable {
         try guardSelfOpenAndReadable()
-        return try cls.emObjectRead(withStream: self)
+        return try cls.init(stream: self)
     }
     
     //MARK: - Extension Write
@@ -184,9 +184,17 @@ open class EMFileStream {
         guard var cStr = string.cString(using: .utf8) else {
             throw EMError.init(type: .fileWriteFailed, detail: "String encoding failed!")
         }
-        try write(dataPtr: &cStr, size: writeSize ?? cStr.count)
+        if let size = writeSize {
+            if size > cStr.count {
+                for _ in cStr.count..<size {
+                    cStr.append(0)
+                }
+            } else if size < cStr.count {
+                throw EMError.init(type: .fileWriteFailed, detail: "Length of string is more than writeSize!")
+            }
+        }
+        try write(dataPtr: &cStr, size: cStr.count)
     }
-
     
     open func write(object: EMFileStreamWriteable) throws {
         try guardSelfOpenAndWriteable()

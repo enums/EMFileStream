@@ -102,7 +102,77 @@ try file.close()
 //or just let ARC release the object, file will automatically close.
 ```
 
+## Archive Your Object:
 
+Use this two protocols:
+
+```swift
+public protocol EMFileStreamReadable {
+    init(stream: EMFileStream) throws
+}
+public protocol EMFileStreamWriteable {
+    func emObjectWrite(withStream stream: EMFileStream) throws
+}
+```
+
+Then you can archive your own object to file with EMFileStream!
+
+There is a Demo:
+
+```swift
+import Foundation
+import EMFileStream
+
+class Student: EMFileStreamReadable, EMFileStreamWriteable {
+    
+    var name: String
+    var age: Int
+    var source: Float
+    var memo: String
+    
+    init(name: String, age: Int, source: Float, memo: String) {
+        self.name = name
+        self.age = age
+        self.source = source
+        self.memo = memo
+    }
+    
+    required init(stream: EMFileStream) throws {
+        self.name = try stream.readString(withSize: 20)
+        self.age = try stream.readInt()
+        self.source = try stream.readFloat()
+        self.memo = try stream.readString(withSize: 100)
+    }
+    
+    func emObjectWrite(withStream stream: EMFileStream) throws {
+        try stream.write(string: name, writeSize: 20)
+        try stream.write(int: age)
+        try stream.write(float: source)
+        try stream.write(string: memo, writeSize: 100)
+    }   
+}
+```
+
+Then you can archive and unarchive your object like this
+
+```swift
+let student = Student.init(name: "Sark", age: 20, source: 78.9, memo: "Memo..........")
+
+do {
+	//archive your object
+    let saveFile = try EMFileStream.init(path: path, mode: .writeBin)
+    try saveFile.write(object: student)
+    //archive your object
+    let readFile = try EMFileStream.init(path: path, mode: .readBin)
+    let student = try readFile.readObject(cls: Student.self)
+    
+    print(student)
+} catch {
+    print(error)
+}
+
+
+```
 
 # HAVE FUN :)
 

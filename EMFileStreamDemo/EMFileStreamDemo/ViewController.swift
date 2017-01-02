@@ -15,7 +15,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let student = Student.init(name: "Sark", age: 20, source: 78.9, doubleSource: 90.12345, memo: "Memo..........")
+        let student = Student.init(name: "Sark", age: 20, source: 78.9, memo: "Memo..........")
         do {
             let file = try EMFileStream.init(path: path, mode: .writeBin)
             try file.write(object: student)
