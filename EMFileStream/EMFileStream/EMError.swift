@@ -19,6 +19,8 @@ public enum EMErrorType: String {
     case fileReadFailed = "File read failed"
     case fileWriteFailed = "File write failed"
     case fileCloseFailed = "File close failed"
+    
+    case streamOutOfLimit = "Stream out of Limit"
 }
 
 

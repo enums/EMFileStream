@@ -27,7 +27,7 @@ class ViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         do {
             let file = try EMFileStream.init(path: path, mode: .readBin)
-            let student = try file.readObject(cls: Student.self)
+            let student: Student = try file.readObject()
             print(student)
         } catch {
             print(error)

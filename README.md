@@ -10,6 +10,8 @@ A file operation tool developed by Swift 3 working on iOS, macOS and Linux.
 
 Clone the repo and copy the framework to your project.
 
+If you need archive your object to a Data object, you can use [「EMDataStream」](https://github.com/trmbhs/EMDataStream).
+
 # Usage
 
 Import the framework
@@ -162,15 +164,15 @@ do {
 	//archive your object
     let saveFile = try EMFileStream.init(path: path, mode: .writeBin)
     try saveFile.write(object: student)
-    //archive your object
+    //unarchive your object
     let readFile = try EMFileStream.init(path: path, mode: .readBin)
-    let student = try readFile.readObject(cls: Student.self)
+    let stundentOut: Student = try stream.readObject()
+    //!!!The type of `studentOut` have to be specified
     
     print(student)
 } catch {
     print(error)
 }
-
 
 ```
 

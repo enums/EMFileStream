@@ -143,9 +143,9 @@ open class EMFileStream {
         return String.gen(ptr: try memory.mptr)
     }
     
-    open func readObject(cls: EMFileStreamReadable.Type) throws -> EMFileStreamReadable {
+    open func readObject<T: EMFileStreamReadable>() throws -> T {
         try guardSelfOpenAndReadable()
-        return try cls.init(stream: self)
+        return try T.init(stream: self)
     }
     
     //MARK: - Extension Write
