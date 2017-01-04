@@ -18,7 +18,7 @@ open class EMMemory: CustomDebugStringConvertible, CustomStringConvertible {
         }
     }
     
-    open var data: Array<UInt8> {
+    open var bytes: Array<UInt8> {
         get {
             var data = Array<UInt8>.init(repeating: 0, count: size)
             for i in 0..<size {
@@ -27,6 +27,13 @@ open class EMMemory: CustomDebugStringConvertible, CustomStringConvertible {
             return data
         }
     }
+    
+    open var data: Data {
+        get {
+            return Data.init(bytes: mptr, count: size)
+        }
+    }
+    
     open var size: Int = 0
     
     open var debugDescription: String {

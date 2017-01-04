@@ -13,8 +13,7 @@
 		566E5CE61E0EB6D400DC179D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 566E5CE51E0EB6D400DC179D /* Assets.xcassets */; };
 		566E5CE91E0EB6D400DC179D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 566E5CE71E0EB6D400DC179D /* LaunchScreen.storyboard */; };
 		566E5D071E0F8EBC00DC179D /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 566E5D061E0F8EBC00DC179D /* Student.swift */; };
-		5672E8A61E1A47FB004F8F9A /* EMFileStream.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 56CB337C1E1A3D44009299B8 /* EMFileStream.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		56CB337D1E1A3D44009299B8 /* EMFileStream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56CB337C1E1A3D44009299B8 /* EMFileStream.framework */; };
+		F312629C1E1CE5D3009B5842 /* EMFileStream.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F312629B1E1CE5D3009B5842 /* EMFileStream.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +23,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				5672E8A61E1A47FB004F8F9A /* EMFileStream.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -39,7 +37,7 @@
 		566E5CE81E0EB6D400DC179D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		566E5CEA1E0EB6D400DC179D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		566E5D061E0F8EBC00DC179D /* Student.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Student.swift; path = EMFileStreamDemo/Student.swift; sourceTree = "<group>"; };
-		56CB337C1E1A3D44009299B8 /* EMFileStream.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EMFileStream.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/EMFileStreamDemo-ccwjisjflsddcegjmjenhhrlyfwj/Build/Products/Debug-iphonesimulator/EMFileStream.framework"; sourceTree = "<group>"; };
+		F312629B1E1CE5D3009B5842 /* EMFileStream.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EMFileStream.framework; path = "../../../../Library/Developer/Xcode/DerivedData/EMFileStreamDemo-beyznrncppcgjwflodyepzoomqtt/Build/Products/Debug-iphoneos/EMFileStream.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,7 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				56CB337D1E1A3D44009299B8 /* EMFileStream.framework in Frameworks */,
+				F312629C1E1CE5D3009B5842 /* EMFileStream.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,7 +86,7 @@
 		566E5CFA1E0EC02C00DC179D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				56CB337C1E1A3D44009299B8 /* EMFileStream.framework */,
+				F312629B1E1CE5D3009B5842 /* EMFileStream.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

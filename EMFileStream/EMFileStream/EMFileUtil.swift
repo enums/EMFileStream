@@ -11,6 +11,7 @@ import Foundation
 
 public enum EMFileMode: String {
     case writeBin = "wb"
+    case appendBin = "ab"
     case readBin = "rb"
 }
 

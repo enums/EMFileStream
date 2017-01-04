@@ -140,7 +140,7 @@ open class EMFileStream {
     open func readString(withSize size: Int) throws -> String {
         try guardSelfOpenAndReadable()
         let memory = try read(size: EM_SIZE_CHAR, count: size)
-        return String.gen(ptr: try memory.mptr)
+        return String.gen(ptr: memory.mptr)
     }
     
     open func readObject<T: EMFileStreamReadable>() throws -> T {
