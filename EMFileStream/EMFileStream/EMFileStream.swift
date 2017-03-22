@@ -211,7 +211,7 @@ open class EMFileStream {
     
     fileprivate func guardSelfOpenAndReadable() throws {
         try guardSelfOpen()
-        guard mode == .readBin else {
+        guard mode == .readBin || mode == .appendBin else {
             throw EMError.init(type: .fileClosed, detail: "File mode error!")
         }
     }
